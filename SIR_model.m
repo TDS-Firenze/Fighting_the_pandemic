@@ -1,4 +1,4 @@
-% This function solve the SIR model with ode45
+% This script solves SIR model with ode45
 
 clear all
 
