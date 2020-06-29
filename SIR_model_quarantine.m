@@ -1,4 +1,4 @@
-% This function solve the SIR model with quarantine effect
+% This script solves SIR model with quarantine effect
 
 clear all
 
