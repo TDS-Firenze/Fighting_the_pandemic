@@ -1,6 +1,7 @@
+% This function solve the SIR model with ode45
+
 beta = 4;
 gamma = 1;
-
 tspan = linspace(0,10) ;
 y0 = [0.999 0.001 0] ;
 [t,y] = ode45(@(t,y) SIR(t,y,beta,gamma), tspan, y0);
@@ -32,13 +33,13 @@ y0 = [0.999 0.001 0] ;
 
 
 plot(t,y(:,1),'LineWidth',2)
-
 hold on
 plot(t,y(:,2),'LineWidth',2)
 plot(t,y(:,3),'LineWidth',2)
 xlabel('Time t','Fontsize',16);
 legend('S','I','R','Fontsize',16)
  
+% Definition of the SIR model
 function  F = SIR(t,y,beta,gamma)
 % S' = - beta I S
 % I' =   beta I S - gamma I
