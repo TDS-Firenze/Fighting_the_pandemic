@@ -1,5 +1,7 @@
 % This function plot Imax (the maximum number of infections) as a function of R_0
 
+clear all
+
 S0 = 0.99;
 I0 = 0.01;
 
