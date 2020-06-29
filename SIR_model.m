@@ -1,5 +1,7 @@
 % This function solve the SIR model with ode45
 
+clear all
+
 beta = 4;
 gamma = 1;
 tspan = linspace(0,10) ;
