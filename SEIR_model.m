@@ -1,3 +1,5 @@
+% This script solves SEIR model 
+
 close all
 clear all
 
@@ -21,6 +23,8 @@ plot(t,y(:,4),'LineWidth',2)
 xlabel('Time t','Fontsize',15);
 legend('S(t)','E(t)','I(t)','R(t)','Fontsize',15)
 
+
+% Definition of the function
 function  out = odefun(t,y)
  S = y(1);
  E = y(2);
