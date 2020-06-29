@@ -1,4 +1,4 @@
-% This function solve the SIR model with tests
+% This script solves SIR model with tests
 
 
 clear all
